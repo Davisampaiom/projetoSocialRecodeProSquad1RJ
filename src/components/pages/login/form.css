@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    
+}
+
+.corpo{
+    background-size: contain;
+    background-image: url('./background.jpg');
+    height: 100vh;
+}
+
+.container{
+    width: 200%;
+    height: 100%;
+    /* background-color: whitesmoke; */
+    
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    border: 0;
+}
+
+.formlogin{
+    border-radius: 10px;
+    width: 550px;
+    height: 500px;
+    padding: 90px 40px 10px 10px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    background-color: white;
+}
+
+.info-form{
+    width: 100%;
+    text-align: center;
+}
+
+.info-form h2{
+    font-size: 34px;
+    color: #747c82;
+}
+.info-form p{
+    margin-top: 10px;
+    color: #b3bac2;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+.input-wrapper input, input[type=submit]{
+    padding-left: 10px;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    margin-top: 10px;
+}
+
+input[type=submit]{
+    padding-left: 0;
+    background-color: #48525e;
+    color: white;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.rec-senha{
+    width: 250px;
+}
+.rec-senha a{
+    text-decoration: none;
+    color: #9c9fa5;
+    font-size: 14px;
+}
