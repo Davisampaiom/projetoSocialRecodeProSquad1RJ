@@ -13,7 +13,7 @@ const Cards = (props) => {
         <div className="card">
         <CardComponent
           className={styles.infected}
-          cardTitle="Casos confirmado"
+          cardTitle="Casos confirmados"
           value={props.confirmed}
           lastUpdate={props}
         />
