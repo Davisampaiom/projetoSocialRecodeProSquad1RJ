@@ -13,7 +13,7 @@ function Login(){
                     
                     <div className="info-form">
                             <h2>Fazer login</h2>
-                            <p>Para entra no seu Espaço Seguro</p>
+                            <p>Para entrar no seu Espaço Seguro</p>
                     </div>
 
                     <form>
