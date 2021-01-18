@@ -13,7 +13,7 @@ const CardsSg = () => {
         <div className="card">
         <CardComponent
           className={styles.infected}
-          cardTitle="Casos confirmado"
+          cardTitle="Casos confirmados"
           value={37651}
           lastUpdate={13012020}
         />
