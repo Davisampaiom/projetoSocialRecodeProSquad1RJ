@@ -40,22 +40,21 @@ function Espaco_seguro() {
                 <div className="mural-wrapper">
                   <div className="wrapper-noti">
                     <div className="mini-img">Conteudo uol</div>
-                    <p>LOrem ipsum</p>
+       
                   </div>
 
                   <div className="wrapper-noti">
                     <div className="mini-img">Conteudo uol</div>
-                    <p>LOrem ipsum</p>
+                    
                   </div>
 
                   <div className="wrapper-noti">
                     <div className="mini-img">Conteudo uol</div>
-                    <p>LOrem ipsum</p>
                   </div>
 
                   <div className="wrapper-noti">
                     <div className="mini-img">Conteudo uol</div>
-                    <p>LOrem ipsum</p>
+                    
                   </div>
                 </div>
 
@@ -77,27 +76,24 @@ function Espaco_seguro() {
                     <div className="mini-img">
                       <video width="100%" height="100%" controls></video>
                     </div>
-                    <p>LOrem ipsum</p>
                   </div>
 
                   <div className="wrapper-noti">
                     <div className="mini-img">
                       <video width="100%" height="100%" controls></video>
                     </div>
-                    <p>LOrem ipsum</p>
                   </div>
                   <div className="wrapper-noti">
                     <div className="mini-img">
                       <video width="100%" height="100%" controls></video>
                     </div>
-                    <p>LOrem ipsum</p>
+                    
                   </div>
 
                   <div className="wrapper-noti">
                     <div className="mini-img">
                       <video width="100%" height="100%" controls></video>
                     </div>
-                    <p>LOrem ipsum</p>
                   </div>
                 </div>
 
@@ -117,24 +113,20 @@ function Espaco_seguro() {
                 <div className="mural-wrapper">
                   <div className="wrapper-noti">
                     <div className="mini-img">Conteudo do Site da OMS</div>
-                    <p>LOrem ipsum</p>
                   </div>
 
                   <div className="wrapper-noti">
                     <div className="mini-img">
                       Materia do Ministério da Saúde
                     </div>
-                    <p>LOrem ipsum</p>
                   </div>
 
                   <div className="wrapper-noti">
                     <div className="mini-img">Matéria G1</div>
-                    <p>LOrem ipsum</p>
                   </div>
 
                   <div className="wrapper-noti">
                     <div className="mini-img">Material Uol</div>
-                    <p>LOrem ipsum</p>
                   </div>
                 </div>
 
