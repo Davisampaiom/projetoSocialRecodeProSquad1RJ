@@ -1,4 +1,4 @@
-
+export { default as Alertas } from '.alertas';
 export { default as Area_restrita } from './area_restrita';
 export { default as Avaliacoes } from './avaliacoes';
 export { default as Cadastro } from './cadastro';
