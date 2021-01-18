@@ -13,7 +13,7 @@ const CardsRj = () => {
         <div className="card">
         <CardComponent
           className={styles.infected}
-          cardTitle="Casos confirmado"
+          cardTitle="Casos confirmados"
           value={469437}
           lastUpdate={14012020}
         />
