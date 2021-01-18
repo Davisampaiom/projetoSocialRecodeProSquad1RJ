@@ -16,8 +16,8 @@ function Alertas() {
                         <div className="alertas">
                             <div className="mini-img"></div>
                             <div className="info-alerta">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam est nec metus commodo porta. Sed consequat rutrum lacinia. . </p>
+                                <h3>João Donato</h3>
+                                <p>Eu gostaria de pedir atenção a todas as pessoas que precisam frequentar a Padaria do Seu Zé. Os funcionários estão usando a máscara no queixo. Muita atenção </p>
                             </div>
 
                             <div className="permisao">
@@ -33,26 +33,8 @@ function Alertas() {
                         <div className="alertas">
                             <div className="mini-img"></div>
                             <div className="info-alerta">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam est nec metus commodo porta. Sed consequat rutrum lacinia. . </p>
-                            </div>
-
-                            <div className="permisao">
-                                <p>Deseja retirar anonimato</p>
-
-                                <button>Sim</button>
-                                <button>Não</button>
-                            </div>
-                            <div className="clear"></div>
-                            <hr/>
-                        </div>
-                        
-
-                        <div className="alertas">
-                            <div className="mini-img"></div>
-                            <div className="info-alerta">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam est nec metus commodo porta. Sed consequat rutrum lacinia. . </p>
+                                <h3>Maria José</h3>
+                                <p>Na Rua Dona Cacilda está havendo todo o semana uma intensa aglomeração de pessoas embares da região.</p>
                             </div>
 
                             <div className="permisao">
@@ -69,8 +51,26 @@ function Alertas() {
                         <div className="alertas">
                             <div className="mini-img"></div>
                             <div className="info-alerta">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam est nec metus commodo porta. Sed consequat rutrum lacinia. . </p>
+                                <h3>José das Couves</h3>
+                                <p>Está muito perigoso frequentar a praça pública do bairropor volta das 19:00h, muitas pessoas estão se aglomerando sem o uso de máscaras </p>
+                            </div>
+
+                            <div className="permisao">
+                                <p>Deseja retirar anonimato</p>
+
+                                <button>Sim</button>
+                                <button>Não</button>
+                            </div>
+                            <div className="clear"></div>
+                            <hr/>
+                        </div>
+                        
+
+                        <div className="alertas">
+                            <div className="mini-img"></div>
+                            <div className="info-alerta">
+                                <h3>Ivan Cardoso</h3>
+                                <p>O mercado 2020 não está disponibilizando álcool na entrada do estabelecimento e vem permitindo que pessoas sem máscaras circulem pelo interior. Cuidado!</p>
                             </div>
 
                             <div className="permisao">
