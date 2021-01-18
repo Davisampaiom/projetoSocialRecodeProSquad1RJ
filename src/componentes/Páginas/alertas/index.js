@@ -34,7 +34,7 @@ function Alertas() {
                             <div className="mini-img"></div>
                             <div className="info-alerta">
                                 <h3>Maria José</h3>
-                                <p>Na Rua Dona Cacilda está havendo todo o semana uma intensa aglomeração de pessoas em bares da região.</p>
+                                <p>Na Rua Dona Cacilda está havenp toda semana uma intensa aglomeração de pessoas em bares da região.</p>
                             </div>
 
                             <div className="permisao">
