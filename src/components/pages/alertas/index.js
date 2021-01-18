@@ -7,7 +7,7 @@ function Alertas() {
     return(
 
         <div className="container-fluid mainPage">
-<h1>alertas<h1>
+<h1>alertas</h1>
 
             </div>
 
