@@ -4,7 +4,7 @@ function Espaco_seguro() {
   return (
     <>
       <div className="container-fluid mainPage">
-       <h1>espaço seguro<h1>
+       <h1>espaço seguro</h1>
       </div>
     </>
   );
