@@ -34,7 +34,7 @@ function Alertas() {
                             <div className="mini-img"></div>
                             <div className="info-alerta">
                                 <h3>Maria José</h3>
-                                <p>Na Rua Dona Cacilda está havendo todo o semana uma intensa aglomeração de pessoas embares da região.</p>
+                                <p>Na Rua Dona Cacilda está havendo todo o semana uma intensa aglomeração de pessoas em bares da região.</p>
                             </div>
 
                             <div className="permisao">
@@ -52,7 +52,7 @@ function Alertas() {
                             <div className="mini-img"></div>
                             <div className="info-alerta">
                                 <h3>José das Couves</h3>
-                                <p>Está muito perigoso frequentar a praça pública do bairropor volta das 19:00h, muitas pessoas estão se aglomerando sem o uso de máscaras </p>
+                                <p>Está muito perigoso frequentar a praça pública do bairro por volta das 19:00h, muitas pessoas estão se aglomerando sem o uso de máscaras </p>
                             </div>
 
                             <div className="permisao">
