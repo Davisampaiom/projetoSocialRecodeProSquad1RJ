@@ -7,7 +7,7 @@ function Login(){
         
         <body>
      
-<div className="corpo">
+<div className="page">
             <div className="container">
                 <div className="formlogin">
                     

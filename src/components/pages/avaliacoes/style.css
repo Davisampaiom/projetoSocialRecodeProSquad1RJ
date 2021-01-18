@@ -1,0 +1,36 @@
+.mainPage{
+    background-size: contain;
+    background-image: url('./fundoHome.png');
+    
+    height: 100vh;
+
+    
+}
+
+.contentPage{
+    margin-top: -10vh !important;
+}
+
+.contentPage input{
+    height: 4vh !important;
+
+    border-radius: 1vh;
+
+    margin-bottom: 1vh ;
+}
+
+.ranking{
+    height: 6vh !important;
+    width: 170vh !important;
+
+    align-items: center !important;
+    justify-content: center !important;    
+}
+
+.avaliados{
+    height: 6vh !important;
+    width: 60vh !important;
+
+    margin-top: 6vh !important;
+    margin-left: 13vh !important;
+}

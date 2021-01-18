@@ -9,7 +9,7 @@ body{
     
 }
 
-.corpo{
+.page{
     background-size: contain;
     background-image: url('./background.jpg');
     height: 100vh;

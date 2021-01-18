@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Card, Jumbotron, Row, Col, Pagination } from 'react-bootstrap';
 
@@ -7,7 +7,8 @@ class Avaliacoes extends React.Component {
     render() {
         return (
 
-            <Container>
+         <div className="mainPage">
+                <div className="container-fluid flex-column contentPage">
                 <Row>
                     <Col sm-8>
                         <h4>Avaliações recentes | Supermercados</h4>
@@ -18,7 +19,7 @@ class Avaliacoes extends React.Component {
                 </Row>
 
 
-                <Jumbotron style={{ backgroundColor: '#53565A', color: '#fff' }}>
+                <Jumbotron style={{ backgroundColor: '#53565A', color: '#fff' }} className="mr-3 p-5">
 
                     <div>
                         <div>
@@ -48,22 +49,22 @@ class Avaliacoes extends React.Component {
                     </Row>
                 </Jumbotron>
 
-                <Card>
+                <div className="ranking">
                     <h4>Ranking | Supermercados</h4>
-                </Card>
+                </div>
 
-                <Jumbotron style={{ backgroundColor: '#B0C4DE' }}>
+                <Jumbotron style={{ backgroundColor: '#B0C4DE' }} className="mr-3">
                     <Row>
                         <Col style={{textAlign:'center'}}>
-                            <Card style={{backgroundColor:'#53565A', color:'#fff'}}><h5>Melhores avaliados</h5></Card>
+                            <div style={{backgroundColor:'#53565A', color:'#fff'}} className="avaliados p-4"><h5>Melhores avaliados</h5></div>
                             <br></br>
                             <p>1. Mercado Líder</p>
                             <p>2. Mercado Oba</p>
                             <p>3. Mercado Custo</p>
                         </Col>
 
-                        <Col style={{textAlign:'center'}}>
-                            <Card style={{backgroundColor:'#53565A', color:'#fff'}}><h5>Piores avaliados</h5></Card>
+                        <Col style={{textAlign:'center'}} className="mb-5">
+                            <div style={{backgroundColor:'#53565A', color:'#fff'}} className="avaliados p-4"><h5>Piores avaliados</h5></div>
                             <br></br>
                             <p>1. Mercado Patinho</p>
                             <p>2. Mercado Sabão</p>
@@ -72,7 +73,8 @@ class Avaliacoes extends React.Component {
                     </Row>
                 </Jumbotron>
 
-            </Container>
+            </div>
+         </div>
         );
     }
 }
