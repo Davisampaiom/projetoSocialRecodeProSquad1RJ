@@ -20,11 +20,11 @@ const Header = () => {
                 <Nav.Link as={Link} href="/" to="/"><p>Espaço seguro</p></Nav.Link>
                 {/* <Nav.Link className="ml-5"  as={Link} href="espaco_seguro" to="espaco_seguro"><p>Seu espaço seguro</p></Nav.Link> */}
                 <Nav.Link className="ml-5"  as={Link} href="avaliacoes" to="avaliacoes"><p>Avaliações</p></Nav.Link>
-                {/* <Nav.Link className="ml-5"  as={Link} href="alertas" to="alertas"><p>Alertas</p></Nav.Link>
-                <Nav.Link className="ml-5"  as={Link} href="covid-19" to="covid-19"><p>Covid-19</p></Nav.Link> */}
+                <Nav.Link className="ml-5"  as={Link} href="alertas" to="alertas"><p>Alertas</p></Nav.Link>
+                {/* <Nav.Link className="ml-5"  as={Link} href="covid-19" to="covid-19"><p>Covid-19</p></Nav.Link> */}
                 <Nav.Link className="ml-5" as={Link} href="login" to="login"><p>Login</p></Nav.Link>
                 <Nav.Link className="ml-5" as={Link} href="cadastro" to="cadastro"><p>Cadastre-se</p>  </Nav.Link>
-                <Nav.Link className="ml-5" as={Link} href="criar_alerta" to="criar_alerta"><p>Criar Alerta</p>  </Nav.Link>
+                {/* <Nav.Link className="ml-5" as={Link} href="criar_alerta" to="criar_alerta"><p>Criar Alerta</p>  </Nav.Link> */}
 
             </Nav>
             </Navbar.Collapse>

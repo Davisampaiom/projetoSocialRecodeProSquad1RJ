@@ -21,7 +21,7 @@ function Cadastro()  {
     }
 
     function handleSubmit(event){
-        event.preventDefault();
+        // event.preventDefault();
         fetch("http://localhost:3010/cadastrar", {
             method: "POST",
             headers: {
@@ -81,8 +81,8 @@ function Cadastro()  {
                             <input type="submit" className="btn btn-dark "  name="cadastrar" value="Cadastrar"/>
                         </div>
 
-                    </form> 
-
+                    </form> <br/>
+                    <center>{response && response.ok && <p >Cadastro Efetuado com sucesso</p>}</center>
                    
                 </div>
 
@@ -95,7 +95,7 @@ function Cadastro()  {
                         Mas se precisar, saia seguro.
                     </p>
                 </div>
-
+               
              </div> 
 
         </body>
