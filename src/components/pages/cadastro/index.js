@@ -1,11 +1,42 @@
-
+import React from 'react'
 import './form.css';
 import logo from './logo.png'
 
 function Cadastro()  {
-    return (
+    const [form, setForm] = React.useState({
+        nome:"",
+        usuario:"",
+        nascimento:"",
+        email:"",
+        senha:"",
+       
+    })
 
-        
+    const [response, setResponse] = React.useState(null)
+
+    function handleChange({target}) {
+        const {id, value} = target;
+
+        setForm({ ...form, [id]:value})
+    }
+
+    function handleSubmit(event){
+        event.preventDefault();
+        fetch("http://localhost:3010/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            }, body: JSON.stringify(form),
+         }).then((res)=>{
+             setResponse(res);
+         })
+
+         
+    }
+    
+
+    return (
+    
         <body>
             
 
@@ -21,24 +52,24 @@ function Cadastro()  {
                          <a href="">Sou Pessoa Jurídica</a>     
                     </div>
 
-                    <form><br/>
+                    <form onSubmit={handleSubmit}><br/>
                         <div className="input-wrapper">
-                            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required/>
+                            <input onChange={handleChange } value={form.nome} type="text" id="nome" name="nome" placeholder="Nome Completo" required/>
                         </div>
                         <div className="input-wrapper">
-                            <input type="text" id="usuario"  name="usuario" placeholder="Nome de usuário" required/>
+                            <input onChange={handleChange} value={form.usuario} type="text" id="usuario"  name="usuario" placeholder="Nome de usuário" required/>
                         </div> 
 
                         <div className="input-wrapper">
-                            <input type="text" id="datanascimento" name="datanascimento" placeholder="Data de Nascimento" required/>
+                            <input onChange={handleChange} value={form.nascimento} type="text" id="nascimento" name="nascimento" placeholder="Data de Nascimento" required/>
                         </div>
 
                         <div className="input-wrapper">
-                            <input type="text" id="email"  name="email" placeholder="E-mail" required/>
+                            <input onChange={handleChange} value={form.email} type="text" id="email"  name="email" placeholder="E-mail" required/>
                         </div>
 
                         <div className="input-wrapper">
-                            <input type="password" id="senha"  name="senha" placeholder="Senha" required/>
+                            <input onChange={handleChange} value={form.senha} type="password" id="senha"  name="senha" placeholder="Senha" required/>
                         </div>
 
                         <div className="input-wrapper">
