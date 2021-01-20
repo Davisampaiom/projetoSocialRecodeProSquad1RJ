@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 import { Navbar, Nav } from 'react-bootstrap';
-import { Home, Login, Alertas, Avaliacoes, Cadastro, Covid, Espaco_seguro } from '../../pages';
+import { Home, Login, Alertas, Avaliacoes, Cadastro, Covid, Espaco_seguro, Criar_alerta } from '../../pages';
 
 
 
@@ -24,6 +24,7 @@ const Header = () => {
                 <Nav.Link className="ml-5"  as={Link} href="covid-19" to="covid-19"><p>Covid-19</p></Nav.Link> */}
                 <Nav.Link className="ml-5" as={Link} href="login" to="login"><p>Login</p></Nav.Link>
                 <Nav.Link className="ml-5" as={Link} href="cadastro" to="cadastro"><p>Cadastre-se</p>  </Nav.Link>
+                <Nav.Link className="ml-5" as={Link} href="criar_alerta" to="criar_alerta"><p>Criar Alerta</p>  </Nav.Link>
 
             </Nav>
             </Navbar.Collapse>
@@ -36,7 +37,8 @@ const Header = () => {
                 <Route exact path="/cadastro"> <Cadastro />  </Route>
                 <Route exact path="/covid-19"> <Covid />  </Route>
                 <Route exact path="/espaco_seguro"> <Espaco_seguro />  </Route>
-                <Route exact path="/login"> <Login />  </Route>                
+                <Route exact path="/login"> <Login />  </Route>  
+                <Route exact path="/criar_alerta"> <Criar_alerta />  </Route>              
             </Switch>
         </div>
    

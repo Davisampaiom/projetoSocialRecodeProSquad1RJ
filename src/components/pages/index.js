@@ -6,3 +6,4 @@ export { default as Covid } from './covid-19';
 export { default as Espaco_seguro } from './espaco_seguro';
 export { default as Home } from './home';
 export { default as Login } from './login';
+export { default as Criar_alerta } from './criar_alertas';

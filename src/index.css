@@ -17,6 +17,7 @@
 } 
 
 .footer{
-  position: absolute;
-  top :102%;
+  position: fixed;
+  bottom:0vh;
+  
 }
