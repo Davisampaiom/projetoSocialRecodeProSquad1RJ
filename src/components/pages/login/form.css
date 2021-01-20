@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.botao{
+    width:20vh!important;
+    height: 5vh !important;
+
+    margin-left: 22vh !important;
+}
+
 body{
     height: 100%;
     

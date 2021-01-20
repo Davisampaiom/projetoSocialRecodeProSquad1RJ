@@ -66,13 +66,16 @@
     padding-top: 10px;
 }
 
-.alertas .mini-img{
-    width: 100px;
-    height: 100px;
-    border: 1px solid #626466;
-    border-radius: 50px;
-    margin-right: 10px;
-    float: left;
+.alertas button{
+    width:15vh !important;
+}
+   
+.alertas textarea{
+    width:60vh !important;
+    height: 10vh;
+
+    margin-left: 10vh !important;
+
 }
 
 .info-alerta{
@@ -167,7 +170,7 @@
 
 .contato{
     width: 100%;
-    margin-top: 20px;
+    margin-top: -16vh ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,6 +178,7 @@
 }
 
 .contato > .titulo{
+    margin-top: 10vh !important;
     border-radius: 5px;
     padding: 10px 5px;
     
@@ -217,7 +221,11 @@
     margin: 10px auto 10px auto;
 }
 
+.alertback{
+   margin: 2vh !important;
+   padding:2vh !important;
 
+}
 
 
 @media screen and (max-width:878px){

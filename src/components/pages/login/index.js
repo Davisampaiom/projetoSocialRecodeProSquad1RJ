@@ -18,17 +18,20 @@ function Login(){
 
                     <form>
                         <div className="input-wrapper">
-                            <input type="email" name="nome" placeholder="   E-mail" required/>
+                            <input  type="email" name="nome" placeholder="   E-mail" required/>
                         </div>
                         <div className="input-wrapper">
                             <input type="password"  name="senha" placeholder="   Senha" required/>
                         </div>
                         
-                        <input type="submit" value="Entrar"  className="btn btn-dark "/>
+                        {/* <input type="submit"  value="Entrar"  className="btn btn-dark "/> */}
+                        {/* <a href="">Esqueceu sua senha?</a> */}
                         <div className="rec-senha"><br/>
-                            <a href="">Esqueceu sua senha?</a>
+                        
                         </div>
                     </form> 
+                    <a href="criar_alerta"><button type="submit" className="btn btn-dark botao" >Entrar</button></a>
+                    
 
                     {/* /* <div className="container-rd">
                         <p>Acesso rapido com</p>

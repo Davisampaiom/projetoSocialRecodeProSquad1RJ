@@ -1,135 +1,122 @@
-import './meusalertas.css';
+import "./meusalertas.css";
+import React, { useState, useEffect } from "react";
+import Alert from "../alertas/alert";
 
 // import { Mapinha } from "../../modulos";
 
-  
 function Criar_alerta() {
-    return(
+  const url = "http://localhost:3010/alerta";
 
-        <div className="container-fluid mainPage">
+  const [alert, setAlert] = useState(null);
+  const fetchApi = async () => {
+    const getresponse = await fetch(url);
+    const getresponseJSON = await getresponse.json();
+    setAlert(getresponseJSON);
+  };
+  useEffect(() => {
+    fetchApi();
+  }, []);
 
-                <div className="container-alertas">
+  const [newalert, setNewalert] = React.useState({
+    alertas: "",
+    id_usuario: "",
+  });
+  const [response, setResponse] = React.useState(null);
 
-                    <div className="meus-alertas">
-                        <a href="#" className="titulo one">Meus Alertas</a>
+  function handleChange({ target }) {
+    const { id, value } = target;
 
-                        <div className="alertas">
-                            <div className="mini-img"></div>
-                            <div className="info-alerta">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam est nec metus commodo porta. Sed consequat rutrum lacinia. . </p>
-                            </div>
+    setNewalert({ ...newalert, [id]: value });
+  }
 
-                            <div className="permisao">
-                                <p>Deseja retirar anonimato</p>
+  function handleSubmit(event) {
+    event.preventDefault();
+    fetch("http://localhost:3010/alertas", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newalert),
+    }).then((res) => {
+      setResponse(res);
+    });
+  }
 
-                                <button>Sim</button>
-                                <button>Não</button>
-                            </div>
-                            <div className="clear"></div>
-                            <hr/>
-                        </div>
+  return (
+    <div className="container-fluid mainPage">
+      <div className="container-alertas">
+        <div className="meus-alertas ">
+          <a href="#" className="titulo one">
+            Meus Alertas
+          </a>
 
-                        <div className="alertas">
-                            <div className="mini-img"></div>
-                            <div className="info-alerta">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam est nec metus commodo porta. Sed consequat rutrum lacinia. . </p>
-                            </div>
+          <div className="alertas d-flex flex-column">
+            <div className="info-alerta ml-5  card-body">
+              <form onSubmit={handleSubmit}>
+                <label>Informe seu ID de usuario</label>
+                <input
+                  type="text"
+                  id="id_usuario"
+                  onChange={handleChange}
+                  value={newalert.id_usuario}
+                />
+                <label>Novo Alerta</label>
+                <textarea
+                  id="alertas"
+                  onChange={handleChange}
+                  value={newalert.alertas}
+                ></textarea>
+                <input
+                  className="btn btn-dark"
+                  type="submit"
+                  value="Novo alerta"
+                />
+              </form>
+            </div>
+            <div className="alertback d-flex flex-row">
+              <center>
+                {alert &&
+                  alert.map((item) => (
+                    <Alert
+                      key={item.idalertas}
+                      alertas={item.alertas}
+                      id_usuario={item.id_usuario}
+                    />
+                  ))}
+              </center>
+            </div>
+          </div>
 
-                            <div className="permisao">
-                                <p>Deseja retirar anonimato</p>
+          {/* <div className="btn-alerta">
+            <button>25 Alertas</button>
+            <div className="clear"></div>
+          </div> */}
+        </div>
+      </div>
 
-                                <button>Sim</button>
-                                <button>Não</button>
-                            </div>
-                            <div className="clear"></div>
-                            <hr/>
-                        </div>
-                        
-
-                        <div className="alertas">
-                            <div className="mini-img"></div>
-                            <div className="info-alerta">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam est nec metus commodo porta. Sed consequat rutrum lacinia. . </p>
-                            </div>
-
-                            <div className="permisao">
-                                <p>Deseja retirar anonimato</p>
-
-                                <button>Sim</button>
-                                <button>Não</button>
-                            </div>
-                            <div className="clear"></div>
-                            <hr/>
-                        </div>
-                        
-
-                        <div className="alertas">
-                            <div className="mini-img"></div>
-                            <div className="info-alerta">
-                                <h3>Lorem ipsum dolor</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam est nec metus commodo porta. Sed consequat rutrum lacinia. . </p>
-                            </div>
-
-                            <div className="permisao">
-                                <p>Deseja retirar anonimato</p>
-
-                                <button>Sim</button>
-                                <button>Não</button>
-                            </div>
-                            <div className="clear"></div>
-                            <hr/>
-                        </div>
-                        
-                        
-
-                        <div className="mini-menu">
-                            <a href="">1</a>
-                            <a href="">2</a>
-                            <a href="">3</a>
-                            <a href="">...</a>
-                            <a href="">20</a>
-                            <a href="">21</a>
-                        </div>
-                        
-                        <div className="btn-alerta">
-                            <button>25 Alertas</button>
-                            <div className="clear"></div>
-                        </div>
-
-                        
-                    </div>
-
-                </div>
-
-                <div className="container-regiao-contato">
-                    {/* <div className="container-map">
+      <div className="container-regiao-contato">
+        {/* <div className="container-map">
                         <h2>Minha região</h2>
                         <div className="map" id="map">
                             <Mapinha />
                         </div>
                     </div> */}
 
-                    <div className="contato">
-                        <h2 className="titulo">Contatos Oficais</h2>
-                        <div className="info-contatos">
-                            <h4>Prefeitura Municipal de São Gonçalo</h4>
-                            <a href="">https://www.saogoncalo.rj.gov.br/</a>
-                            <h4>(21) 2199-6300</h4>
-                            <div className="linha"></div>
-                            <h4>Policia Militar</h4>
-                            <h4>190</h4> 
-                            <div className="linha"></div> 
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-    );
+        <div className="contato">
+          <h2 className="titulo">Contatos Oficais</h2>
+          <div className="info-contatos">
+            <h4>Prefeitura Municipal de São Gonçalo</h4>
+            <a href="">https://www.saogoncalo.rj.gov.br/</a>
+            <h4>(21) 2199-6300</h4>
+            <div className="linha"></div>
+            <h4>Policia Militar</h4>
+            <h4>190</h4>
+            <div className="linha"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Criar_alerta;
-
