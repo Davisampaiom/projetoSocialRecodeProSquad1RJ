@@ -47,7 +47,7 @@ function Cadastro()  {
                         </div>
                        
                         <div className="input-wrapper">
-                            <input type="submit"  name="cadastrar" value="Cadastrar"/>
+                            <input type="submit" className="btn btn-dark "  name="cadastrar" value="Cadastrar"/>
                         </div>
 
                     </form> 

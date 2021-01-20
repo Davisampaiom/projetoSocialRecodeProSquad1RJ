@@ -24,8 +24,8 @@ function Login(){
                             <input type="password"  name="senha" placeholder="   Senha" required/>
                         </div>
                         
-                        <input type="submit" value="Entrar"/>
-                        <div className="rec-senha">
+                        <input type="submit" value="Entrar"  className="btn btn-dark "/>
+                        <div className="rec-senha"><br/>
                             <a href="">Esqueceu sua senha?</a>
                         </div>
                     </form> 
