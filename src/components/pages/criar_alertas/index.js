@@ -5,7 +5,7 @@ import Alert from "../alertas/alert";
 // import { Mapinha } from "../../modulos";
 
 function Criar_alerta() {
-  const url = "http://localhost:3010/alerta";
+  const url = "https://backsquad1.herokuapp.com/alerta";
 
   const [alert, setAlert] = useState(null);
   const fetchApi = async () => {
