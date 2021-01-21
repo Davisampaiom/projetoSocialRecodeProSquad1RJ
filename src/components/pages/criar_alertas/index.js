@@ -31,7 +31,7 @@ function Criar_alerta() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    fetch("http://localhost:3010/alertas", {
+    fetch("https://backsquad1.herokuapp.com/alertas", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

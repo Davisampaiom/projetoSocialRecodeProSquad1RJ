@@ -22,7 +22,7 @@ function Cadastro()  {
 
     function handleSubmit(event){
         // event.preventDefault();
-        fetch("http://localhost:3010/cadastrar", {
+        fetch("https://backsquad1.herokuapp.com/cadastrar", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
