@@ -1,6 +1,6 @@
 import "./meusalertas.css";
 import React, { useState, useEffect } from "react";
-import Alert from "../alertas/alert";
+import Alert2 from "../alertas/alert2";
 
 // import { Mapinha } from "../../modulos";
 
@@ -77,11 +77,11 @@ function Criar_alerta() {
               <center>
                 {alert &&
                   alert.map((item) => (
-                    <Alert
+                    <Alert2
                       key={item.idalertas}
                       alertas={item.alertas}
                       id_usuario={item.id_usuario}
-                    />
+                      />
                   ))}
               </center>
             </div>

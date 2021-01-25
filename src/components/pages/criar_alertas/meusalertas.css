@@ -227,49 +227,25 @@
 
 }
 
+.delet{
+ 
+    position: absolute;
+    left: 45vh !important;
 
-@media screen and (max-width:878px){
-    .container{
-        flex-direction: column;
-    }
+    margin: 0 5vh !important;
 
-    .container-alertas{
-        width: 90%;
-        max-width: none;
-        margin-right: 0;
-        margin: 0  auto;
-    }
+    width: 4px !important;
+}
+.atual{
 
-    .container-regiao-contato{
-        width: 90%;
-        margin: 20px auto 0 auto;
-    }
+    position: absolute;
+    left: 65vh !important;
 
-    .container-map {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .container-map h2{
-        margin-left: 0;
-    }
+    margin: 0 1vh !important;
+
+    width: 5vh !important;
 }
 
 
-@media screen and (max-width:768px){
 
-
-    .container-alertas{
-        width: 100%;
-        max-width: none;
-        margin-right: 0;
-        margin: 0  auto;
-    }
-
-    .container-regiao-contato{
-        width:100%;
-        margin: 20px auto 0 auto;
-    }
-
-}
 

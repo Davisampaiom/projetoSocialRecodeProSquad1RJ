@@ -1,30 +1,58 @@
 .mapa{
-    margin-top: 5px;
+  margin-top: 5px;
 }
 .card {
-    margin: 0 2% !important;
-  }
-  @media only screen and (max-width: 770px) {
-    .card {
-      margin: 2% 0 !important;
-    }
-  }
+  margin: 0 2% !important;
+}
 
-  .covid{
-    display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
 
-  }
 
-  .pageHome{
-    background-size: contain;
-    background-image: url('./fundoHome.png');
-    
-    height: 100vh;
+.covid{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+
+}
+
+.pageHome{
+  background-size: contain;
+  background-image: url('./fundoHome.png');
+  height: 100vh;
 }
 
 .leaflet-container{
-  width:110vh;
-  height:400px;
+width:110vh;
+height:400px;
 }
+
+
+@media only screen and (max-width: 420px){
+
+  .leaflet-container{
+    width: 350px!important;
+    height: 280px;
+  }
+
+.pageHome{
+
+  height: 160vh !important;
+
+}
+.covid .card{
+
+  width: 45vh !important;
+
+  margin-left: 25px !important;
+
+}
+
+.footer{
+  font-size: 0.8rem!important;
+}
+
+
+}
+
+
+
+

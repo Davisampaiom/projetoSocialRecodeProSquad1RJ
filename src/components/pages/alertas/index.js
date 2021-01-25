@@ -34,7 +34,7 @@ function Alertas() {
                         </div>
                      
 
-                          <center> {alert && alert.map(item =><Alert key={item.idalertas} alertas={item.alertas} />)}<br /></center>
+                          <center> {alert && alert.map(item =><Alert key={item.idalertas} id_usuario={item.id_usuario} alertas={item.alertas} />)}<br /></center>
                         
                         {/* <div className="btn-alerta">
                             <button>25 Alertas</button>
