@@ -14,7 +14,7 @@ const CardsSg = () => {
         <CardComponent
           className={styles.infected}
           cardTitle="Casos confirmados"
-          value={37651}
+          value={38300}
           lastUpdate={13012020}
         />
         
@@ -23,7 +23,7 @@ const CardsSg = () => {
         <CardComponent
           className={styles.recovered}
           cardTitle="Pacientes curados"
-          value={36209}
+          value={36662}
           lastUpdate={13012020}
          
          
@@ -33,7 +33,7 @@ const CardsSg = () => {
        <CardComponent
           className={styles.deaths}
           cardTitle="Mortes confirmadas" 
-          value={1105}
+          value={1130}
           lastUpdate={13012020}
          
           
