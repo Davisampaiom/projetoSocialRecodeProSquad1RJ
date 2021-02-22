@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .clear{
     clear: both;
@@ -46,35 +42,7 @@
     margin-bottom: 10px;
 }
 
-.alertas{
-    width: 100%;
-    padding-top: 10px;
-}
 
-.alertas .mini-img{
-    width: 100px;
-    height: 100px;
-    border: 1px solid #626466;
-    border-radius: 50px;
-    margin-right: 10px;
-    float: left;
-}
-
-.info-alerta{
-    width: 50%;
-    float: left;
-    text-align: left;
-}
-.info-alerta h3{
-    font-size: 20px;
-    color: #626466;
-}
-
-.info-alerta p{
-    font-size: 14px;
-    color: #626466;
-    text-align: justify;
-}
 
 .permisao{
     width:30%;
@@ -101,9 +69,6 @@
     margin-right: 10px;
 }
 
-.alertas hr{
-    margin-top: 10px;
-}
 
 
 .mini-menu{
@@ -127,22 +92,8 @@
     border-radius: 0px 5px 5px 0;
 }
 
-.btn-alerta{
-    width: 100%;
-    padding: 10px;
 
-}
 
-.btn-alerta button{
-    float: right;
-    width: 150px;
-    height: 40px;
-    background-color: #353f4b;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    font-size: 18px;
-}
 
 .container-regiao-contato{
     width: 50%;
@@ -226,50 +177,4 @@
 }
 
 
-
-
-@media screen and (max-width:878px){
-    .container{
-        flex-direction: column;
-    }
-
-    .container-alertas{
-        width: 90%;
-        max-width: none;
-        margin-right: 0;
-        margin: 0  auto;
-    }
-
-    .container-regiao-contato{
-        width: 90%;
-        margin: 20px auto 0 auto;
-    }
-
-    .container-map {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .container-map h2{
-        margin-left: 0;
-    }
-}
-
-
-@media screen and (max-width:768px){
-
-
-    .container-alertas{
-        width: 100%;
-        max-width: none;
-        margin-right: 0;
-        margin: 0  auto;
-    }
-
-    .container-regiao-contato{
-        width:100%;
-        margin: 20px auto 0 auto;
-    }
-
-}
 

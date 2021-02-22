@@ -46,10 +46,6 @@ function Criar_alerta() {
     <div className="container-fluid mainPage">
       <div className="container-alertas">
         <div className="meus-alertas ">
-          <a href="#" className="titulo one">
-            Meus Alertas
-          </a>
-
           <div className="alertas d-flex flex-column">
             <div className="info-alerta ml-5  card-body">
               <form onSubmit={handleSubmit}>
@@ -81,7 +77,8 @@ function Criar_alerta() {
                       key={item.idalertas}
                       alertas={item.alertas}
                       id_usuario={item.id_usuario}
-                      />
+                      idalertas={item.idalertas}
+                    />
                   ))}
               </center>
             </div>
