@@ -1,19 +1,11 @@
-*{
-  
-  padding:0 !important;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+font: 400 16px 'Inter', sans-serif;
+
 }
 
-.menu{
-  height: 10vh !important;
-}
-/* home */
 
 
-
-
-.footer{
-  position: fixed;
-  bottom:0vh;
-  
-}

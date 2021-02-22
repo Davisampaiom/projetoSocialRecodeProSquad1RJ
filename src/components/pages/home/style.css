@@ -2,7 +2,7 @@
   margin-top: 5px;
 }
 .card {
-  margin: 0 2% !important;
+  margin: 2% 2% !important;
 }
 
 
@@ -16,13 +16,13 @@
 
 .pageHome{
   background-size: contain;
-  background-image: url('./fundoHome.png');
+  background-color: #e9f3f8;
   height: 100vh;
 }
 
 .leaflet-container{
-width:110vh;
-height:400px;
+width:150vh;
+height:450px;
 }
 
 
@@ -38,17 +38,8 @@ height:400px;
   height: 160vh !important;
 
 }
-.covid .card{
 
-  width: 45vh !important;
 
-  margin-left: 25px !important;
-
-}
-
-.footer{
-  font-size: 0.8rem!important;
-}
 
 
 }

@@ -1,0 +1,15 @@
+.menuItems{
+    height: 5vh !important;
+
+    display:flex;
+
+    justify-content:center !important;
+    align-content:center !important;
+  }
+
+  .menu p{
+
+    font-size: 1.8vh;
+    font-weight: bold;
+}
+
