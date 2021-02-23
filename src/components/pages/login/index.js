@@ -1,10 +1,45 @@
 import "./form.css";
+import logo from "../cadastro/logo.png";
+
+import styled from "styled-components";
+
+const Espaco = styled.div`
+
+position: absolute;
+right:10vh;
+top:35vh;
+
+
+h2{  font-size: 50px;
+    color: white;
+    width: 100%;}
+
+img {margin-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;}
+
+    p{  
+     margin-top: 25px;
+    font-size: 25px;
+    color: white;
+    padding-left: 20px;}
+`
 
 function Login() {
   return (
     <body>
       <div className="page">
         <div className="container">
+      <Espaco>
+            <img src={logo} />
+            <h2>espaçoseguro</h2>
+          <p>
+            Se puder fique em casa.
+            <br />
+            Mas se precisar, saia seguro.
+          </p>
+      </Espaco>
           <div className="formlogin">
             <div className="info-form">
               <h2>Fazer login</h2>
@@ -29,8 +64,6 @@ function Login() {
                 />
               </div>
 
-              {/* <input type="submit"  value="Entrar"  className="btn btn-dark "/> */}
-              {/* <a href="">Esqueceu sua senha?</a> */}
               <div className="rec-senha">
                 <br />
               </div>
@@ -40,17 +73,10 @@ function Login() {
                 Entrar
               </button>
             </a>
-
-            {/* /* <div className="container-rd">
-                        <p>Acesso rapido com</p>
-                        <div className="rede-social">
-                            <a href="">google</a>
-                            <a href="">facebook</a>
-                        </div>
-                    </div> */}
           </div>
+          
         </div>{" "}
-        {/* container */}
+      
       </div>
     </body>
   );

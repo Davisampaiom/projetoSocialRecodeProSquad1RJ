@@ -1,4 +1,7 @@
-
+.mainpage{
+    height:auto;
+    width:100%;
+}
   .container-map {
     width: 100%;
 }
@@ -25,12 +28,6 @@
 }
 
 
-.mainPage{
-    
-    
-
-}
-
 .container-alertas{
     width: 60%;
     max-width: 800px;
@@ -42,6 +39,7 @@
     width: 100%;
     background-color: #e6edf5;
     padding: 15px;
+    border-radius: 2vh;
 }
 
 

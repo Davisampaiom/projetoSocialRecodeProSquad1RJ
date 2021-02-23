@@ -2,10 +2,17 @@ import "./meusalertas.css";
 import React, { useState, useEffect } from "react";
 import Alert2 from "../alertas/alert2";
 
-// import { Mapinha } from "../../modulos";
 
 function Criar_alerta() {
   const url = "https://backsquad1.herokuapp.com/alerta";
+
+  const [newalert, setNewalert] = React.useState({
+    alertas: "",
+    id_usuario: "",
+  });
+
+ 
+
 
   const [alert, setAlert] = useState(null);
   const fetchApi = async () => {
@@ -17,20 +24,18 @@ function Criar_alerta() {
     fetchApi();
   }, []);
 
-  const [newalert, setNewalert] = React.useState({
-    alertas: "",
-    id_usuario: "",
-  });
-  const [response, setResponse] = React.useState(null);
-
+ 
   function handleChange({ target }) {
     const { id, value } = target;
 
     setNewalert({ ...newalert, [id]: value });
   }
 
+
+
+  const [response, setResponse] = React.useState(null);
+
   function handleSubmit(event) {
-    event.preventDefault();
     fetch("https://backsquad1.herokuapp.com/alertas", {
       method: "POST",
       headers: {
@@ -55,18 +60,24 @@ function Criar_alerta() {
                   id="id_usuario"
                   onChange={handleChange}
                   value={newalert.id_usuario}
+                  placeholder="   Id usuario"
+                  style={{ borderRadius: 5, width: 200 }}
                 />
+                <br />
                 <label>Novo Alerta</label>
                 <textarea
                   id="alertas"
                   onChange={handleChange}
                   value={newalert.alertas}
+                  style={{ borderRadius: 7 }}
                 ></textarea>
-                <input
+
+                  <input
                   className="btn btn-dark"
                   type="submit"
                   value="Novo alerta"
                 />
+            
               </form>
             </div>
             <div className="alertback d-flex flex-row">
@@ -83,22 +94,10 @@ function Criar_alerta() {
               </center>
             </div>
           </div>
-
-          {/* <div className="btn-alerta">
-            <button>25 Alertas</button>
-            <div className="clear"></div>
-          </div> */}
         </div>
       </div>
 
       <div className="container-regiao-contato">
-        {/* <div className="container-map">
-                        <h2>Minha região</h2>
-                        <div className="map" id="map">
-                            <Mapinha />
-                        </div>
-                    </div> */}
-
         <div className="contato">
           <h2 className="titulo">Contatos Oficais</h2>
           <div className="info-contatos">
