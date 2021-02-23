@@ -49,7 +49,6 @@ function Cadastro()  {
                     <div className="info-form">
                         <br/>
                          <a href="" className="selected">Sou Pessoa Física</a>
-                         <a href="">Sou Pessoa Jurídica</a>     
                     </div>
 
                     <form onSubmit={handleSubmit}><br/>
