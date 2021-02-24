@@ -39,22 +39,22 @@ const CardsRj = () => {
           <CardComponent
             className={styles.infected}
             cardTitle="Casos confirmados"
-            value={469437}
-            lastUpdate={14012020}
+            value={573275}
+            lastUpdate={22022021}
           />
 
           <CardComponent
             className={styles.recovered}
             cardTitle="Pacientes curados"
-            value={435411}
-            lastUpdate={14012020}
+            value={538126}
+            lastUpdate={22022021}
           />
 
           <CardComponent
             className={styles.deaths}
             cardTitle="Mortes confirmadas"
-            value={27241}
-            lastUpdate={14012020}
+            value={32403}
+            lastUpdate={22022021}
           />
         </div>
       </Grid>
