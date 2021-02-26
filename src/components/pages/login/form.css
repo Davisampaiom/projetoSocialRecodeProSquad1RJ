@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .botao{
     width:20vh!important;
@@ -11,25 +6,20 @@
     margin-left: 25vh !important;
 }
 
-body{
-    height: 100%;
-    
-}
 
 .page{
     background-size: contain;
-    background-color: #9acfe4;
+    background-color: #e9f3f8;
     height: 100vh;
 }
 
-.container{
-    width: 200%;
-    height: 100%;
+.MainPage{
+   
     /* background-color: whitesmoke; */
     
     /* background-repeat: no-repeat; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     padding: 0;
@@ -38,12 +28,14 @@ body{
 
 .formlogin{
     border-radius: 10px;
-    width: 75vh;
-    height: 50vh;
+    width: 70vh;
+    height: 45vh;
     padding: 90px 40px 10px 10px;
-    /* border: 1px solid black; */
+
     background-color: white;
-    margin-right: 25vh;
+   
+    margin-top: 20vh;
+    margin-left: 10vh;
 }
 
 .info-form{

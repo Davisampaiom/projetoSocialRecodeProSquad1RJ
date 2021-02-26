@@ -5,13 +5,13 @@ import logo from "./logo.png";
 import styled from "styled-components";
 
 const Espaco = styled.div`
-  position: absolute;
-  right: 10vh;
-  top: 30vh;
+  margin-left:10%;
+  margin-top:10vh;
+  margin-right:5vh;
 
   h2 {
     font-size: 50px;
-    color: white;
+    color: black;
     width: 100%;
   }
 
@@ -25,7 +25,7 @@ const Espaco = styled.div`
   p {
     margin-top: 25px;
     font-size: 25px;
-    color: white;
+    color: black;
     padding-left: 20px;
   }
 `;

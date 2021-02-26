@@ -1,15 +1,19 @@
-.menuItems{
-    height: 5vh !important;
+.menuItems {
+  height: 5vh !important;
 
-    display:flex;
+  display: flex;
 
-    justify-content:center !important;
-    align-content:center !important;
-  }
-
-  .menu p{
-
-    font-size: 1.8vh;
-    font-weight: bold;
+  justify-content: center !important;
+  align-content: center !important;
 }
 
+.menu b {
+  font-size: 1.8vh;
+}
+@media only screen and (max-width: 458px) {
+  .menuItems {
+    height: auto !important;
+
+    font-size: 1.3vh;
+  }
+}

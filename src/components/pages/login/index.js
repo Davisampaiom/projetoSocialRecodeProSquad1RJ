@@ -5,13 +5,14 @@ import styled from "styled-components";
 
 const Espaco = styled.div`
 
-position: absolute;
-right:10vh;
-top:35vh;
+  margin-left:10%;
+  margin-top:10vh;
+  margin-right:5vh;
+
 
 
 h2{  font-size: 50px;
-    color: white;
+    color: black;
     width: 100%;}
 
 img {margin-top: 10px;
@@ -22,7 +23,7 @@ img {margin-top: 10px;
     p{  
      margin-top: 25px;
     font-size: 25px;
-    color: white;
+    color: black;
     padding-left: 20px;}
 `
 
@@ -30,16 +31,8 @@ function Login() {
   return (
     <body>
       <div className="page">
-        <div className="container">
-      <Espaco>
-            <img src={logo} />
-            <h2>espaçoseguro</h2>
-          <p>
-            Se puder fique em casa.
-            <br />
-            Mas se precisar, saia seguro.
-          </p>
-      </Espaco>
+        <div className="container-fluid MainPage">
+     
           <div className="formlogin">
             <div className="info-form">
               <h2>Fazer login</h2>
@@ -74,7 +67,15 @@ function Login() {
               </button>
             </a>
           </div>
-          
+          <Espaco>
+            <img src={logo} />
+            <h2>espaçoseguro</h2>
+          <p>
+            Se puder fique em casa.
+            <br />
+            Mas se precisar, saia seguro.
+          </p>
+      </Espaco>
         </div>{" "}
       
       </div>

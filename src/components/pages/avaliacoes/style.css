@@ -1,10 +1,9 @@
 .mainPage{
     background-size: contain;
-    background-image: url('./fundoHome.png');
+    background-color: #fff;
     
     height: 100vh;
 
-    
 }
 
 .contentPage{
@@ -18,6 +17,9 @@
 
     margin-bottom: 1vh ;
 }
+ hr{
+    background-color: #fff !important;
+}
 
 .ranking{
     height: 6vh !important;
@@ -27,10 +29,31 @@
     justify-content: center !important;    
 }
 
-.avaliados{
-    height: 6vh !important;
-    width: 60vh !important;
 
-    margin-top: 6vh !important;
-    margin-left: 13vh !important;
+@media only screen and (max-width: 458px){
+ body{
+    background-color:#fff;
+    height:200% !important;
+
+ }  
+   
+.mainPage{
+        width:100vh!important;
+        height:200vh !important;
+
+    }
+
+.contentPage input{
+
+    justify-content:center;
+
+
+    height: 4vh !important;
+    width: 30vh !important;
+
+    border-radius: 1vh;
+
+    margin-bottom: 2vh ;
+    padding:2vh;
+}
 }
